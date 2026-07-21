@@ -1,261 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statecraft</title>
 
-<title>Statecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#f8f6f2;
-    color:#1b1b1b;
-    font-family:Inter,sans-serif;
-    line-height:1.8;
-}
-
-nav{
-
-    width:100%;
-    border-bottom:1px solid #ddd;
-    background:#f8f6f2;
-
-}
-
-.nav-container{
-
-    max-width:1100px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:22px 30px;
-
-}
-
-.logo{
-
-    font-family:"Cormorant Garamond",serif;
-    font-size:2rem;
-    font-weight:700;
-    letter-spacing:1px;
-
-}
-
-nav ul{
-
-    display:flex;
-    list-style:none;
-    gap:35px;
-
-}
-
-nav a{
-
-    text-decoration:none;
-    color:#444;
-    transition:.2s;
-
-}
-
-nav a:hover{
-
-    color:#000;
-
-}
-
-.hero{
-
-    max-width:900px;
-    margin:140px auto;
-    text-align:center;
-    padding:0 30px;
-
-}
-
-.hero h1{
-
-    font-family:"Cormorant Garamond",serif;
-    font-size:clamp(4rem,10vw,6.5rem);
-    font-weight:600;
-    line-height:1;
-
-}
-
-.tagline{
-
-    margin-top:30px;
-    font-size:1.35rem;
-    color:#666;
-
-}
-
-.divider{
-
-    width:80px;
-    height:1px;
-    background:#222;
-    margin:55px auto;
-
-}
-
-.intro{
-
-    font-size:1.15rem;
-    max-width:650px;
-    margin:auto;
-    color:#555;
-
-}
-
-main{
-
-    max-width:850px;
-    margin:auto;
-    padding:0 30px 100px;
-
-}
-
-.article{
-
-    padding:45px 0;
-    border-bottom:1px solid #ddd;
-
-}
-
-.category{
-
-    text-transform:uppercase;
-    letter-spacing:3px;
-    font-size:.75rem;
-    color:#777;
-
-}
-
-.article h2{
-
-    margin-top:12px;
-    font-family:"Cormorant Garamond",serif;
-    font-size:2.4rem;
-    font-weight:600;
-
-}
-
-.article p{
-
-    margin-top:15px;
-    color:#555;
-
-}
-
-footer{
-
-    text-align:center;
-    padding:50px;
-    border-top:1px solid #ddd;
-    color:#777;
-    font-size:.9rem;
-
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<header>
+
+<div class="container nav">
+
+<a href="#" class="brand">
+Statecraft
+</a>
+
 <nav>
 
-<div class="nav-container">
-
-<div class="logo">
-Statecraft
-</div>
-
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Articles</a></li>
-<li><a href="#">About</a></li>
-</ul>
-
-</div>
+<a href="#latest">Latest</a>
+<a href="#archive">Archive</a>
+<a href="#about">About</a>
 
 </nav>
 
+</div>
+
+</header>
+
 <section class="hero">
 
-<h1>Statecraft</h1>
+<div class="container">
+
+<p class="eyebrow">
+Independent Publication
+</p>
+
+<h1>
+Statecraft
+</h1>
 
 <p class="tagline">
 
 Technology.<br>
 Ideas.<br>
-The future.
+The Future.
 
 </p>
 
-<div class="divider"></div>
+</div>
 
-<p class="intro">
+</section>
 
-An independent publication exploring technology, innovation and the ideas shaping tomorrow.
+<main class="container">
+
+<section class="featured">
+
+<p class="section-title">
+
+Featured
+
+</p>
+
+<h2>
+
+Your first article belongs here.
+
+</h2>
+
+<p class="meta">
+
+When you publish your first article, replace this section with it.
 
 </p>
 
 </section>
 
-<main>
+<section id="latest">
 
-<div class="article">
+<p class="section-title">
 
-<div class="category">Editorial</div>
-
-<h2>Welcome</h2>
-
-<p>
-
-Statecraft is currently in development. Over the coming months this publication will feature thoughtful articles on technology, design, artificial intelligence and the future.
+Latest
 
 </p>
 
-</div>
+<article class="card">
 
-<div class="article">
+<h3>
 
-<div class="category">Coming Soon</div>
+Welcome to Statecraft
 
-<h2>The First Edition</h2>
+</h3>
 
 <p>
 
-The first articles are already being written.
+Statecraft is an independent publication exploring technology, innovation and thoughtful long-form writing.
 
 </p>
 
-</div>
+</article>
+
+<article class="card">
+
+<h3>
+
+Coming Soon
+
+</h3>
+
+<p>
+
+Apple, artificial intelligence, software, design and technology.
+
+</p>
+
+</article>
+
+<article class="card">
+
+<h3>
+
+Your Next Article
+
+</h3>
+
+<p>
+
+Replace these placeholder articles with your own writing.
+
+</p>
+
+</article>
+
+</section>
+
+<section id="about">
+
+<p class="section-title">
+
+About
+
+</p>
+
+<p>
+
+Statecraft is a personal publication dedicated to technology, ideas and the future.
+
+</p>
+
+</section>
 
 </main>
 
 <footer>
 
+<div class="container">
+
 Statecraft
+
+</div>
 
 </footer>
 
