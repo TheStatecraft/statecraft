@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Statecraft</title>
 
@@ -20,25 +20,33 @@
     box-sizing:border-box;
 }
 
-body{
+html{
+    scroll-behavior:smooth;
+}
 
+body{
     background:#f8f6f2;
     color:#1b1b1b;
     font-family:Inter,sans-serif;
     line-height:1.8;
-
 }
 
 nav{
 
+    width:100%;
+    border-bottom:1px solid #ddd;
+    background:#f8f6f2;
+
+}
+
+.nav-container{
+
     max-width:1100px;
     margin:auto;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:28px 30px;
+    padding:22px 30px;
 
 }
 
@@ -46,16 +54,16 @@ nav{
 
     font-family:"Cormorant Garamond",serif;
     font-size:2rem;
-    letter-spacing:1px;
     font-weight:700;
+    letter-spacing:1px;
 
 }
 
 nav ul{
 
     display:flex;
-    gap:40px;
     list-style:none;
+    gap:35px;
 
 }
 
@@ -63,6 +71,13 @@ nav a{
 
     text-decoration:none;
     color:#444;
+    transition:.2s;
+
+}
+
+nav a:hover{
+
+    color:#000;
 
 }
 
@@ -70,46 +85,51 @@ nav a{
 
     max-width:900px;
     margin:140px auto;
-
-    padding:0 30px;
     text-align:center;
+    padding:0 30px;
 
 }
 
 .hero h1{
 
     font-family:"Cormorant Garamond",serif;
-    font-size:6rem;
+    font-size:clamp(4rem,10vw,6.5rem);
     font-weight:600;
+    line-height:1;
 
 }
 
-.hero p{
+.tagline{
 
     margin-top:30px;
-
-    font-size:1.3rem;
-
+    font-size:1.35rem;
     color:#666;
 
 }
 
-.line{
+.divider{
 
     width:80px;
     height:1px;
     background:#222;
-
-    margin:60px auto;
+    margin:55px auto;
 
 }
 
-.content{
+.intro{
+
+    font-size:1.15rem;
+    max-width:650px;
+    margin:auto;
+    color:#555;
+
+}
+
+main{
 
     max-width:850px;
     margin:auto;
-
-    padding:0 30px 120px;
+    padding:0 30px 100px;
 
 }
 
@@ -123,45 +143,34 @@ nav a{
 .category{
 
     text-transform:uppercase;
-
-    font-size:.8rem;
-
     letter-spacing:3px;
-
+    font-size:.75rem;
     color:#777;
 
 }
 
 .article h2{
 
-    margin-top:15px;
-
+    margin-top:12px;
     font-family:"Cormorant Garamond",serif;
-
     font-size:2.4rem;
-
     font-weight:600;
 
 }
 
 .article p{
 
-    margin-top:18px;
-
+    margin-top:15px;
     color:#555;
 
 }
 
 footer{
 
-    border-top:1px solid #ddd;
-
     text-align:center;
-
     padding:50px;
-
+    border-top:1px solid #ddd;
     color:#777;
-
     font-size:.9rem;
 
 }
@@ -174,21 +183,19 @@ footer{
 
 <nav>
 
+<div class="nav-container">
+
 <div class="logo">
-
 Statecraft
-
 </div>
 
 <ul>
-
 <li><a href="#">Home</a></li>
-
 <li><a href="#">Articles</a></li>
-
 <li><a href="#">About</a></li>
-
 </ul>
+
+</div>
 
 </nav>
 
@@ -196,39 +203,35 @@ Statecraft
 
 <h1>Statecraft</h1>
 
-<p>
+<p class="tagline">
 
 Technology.<br>
-
 Ideas.<br>
-
 The future.
 
 </p>
 
-<div class="line"></div>
+<div class="divider"></div>
+
+<p class="intro">
+
+An independent publication exploring technology, innovation and the ideas shaping tomorrow.
+
+</p>
 
 </section>
 
-<section class="content">
+<main>
 
 <div class="article">
 
-<div class="category">
+<div class="category">Editorial</div>
 
-Editorial
-
-</div>
-
-<h2>
-
-Welcome to Statecraft
-
-</h2>
+<h2>Welcome</h2>
 
 <p>
 
-Statecraft is an independent publication exploring technology, innovation and the ideas shaping tomorrow.
+Statecraft is currently in development. Over the coming months this publication will feature thoughtful articles on technology, design, artificial intelligence and the future.
 
 </p>
 
@@ -236,34 +239,25 @@ Statecraft is an independent publication exploring technology, innovation and th
 
 <div class="article">
 
-<div class="category">
+<div class="category">Coming Soon</div>
 
-Coming Soon
-
-</div>
-
-<h2>
-
-First Articles
-
-</h2>
+<h2>The First Edition</h2>
 
 <p>
 
-Apple, artificial intelligence, hardware, software and thoughtful long-form writing.
+The first articles are already being written.
 
 </p>
 
 </div>
 
-</section>
+</main>
 
 <footer>
 
-Statecraft · 2026
+Statecraft
 
 </footer>
 
 </body>
-
 </html>
