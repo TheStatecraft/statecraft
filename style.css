@@ -351,3 +351,7 @@ footer{
 }
 header{background:rgba(19,19,19,.9)}
 }
+
+main p {
+    margin-bottom: 1.8em;
+}
