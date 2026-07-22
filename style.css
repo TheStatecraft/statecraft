@@ -355,3 +355,20 @@ header{background:rgba(19,19,19,.9)}
 main p {
     margin-bottom: 1.8em;
 }
+
+.article {
+    max-width: 850px;
+    padding: 80px 30px;
+}
+
+.article p {
+    margin-bottom: 1.8em;
+}
+
+.article h1 {
+    margin-bottom: 0.4em;
+}
+
+.article blockquote {
+    margin-bottom: 2.5em;
+}
